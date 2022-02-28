@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        h4 {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: black;
+        }
+
+        .Main {
+            background-image: url('contactbg.jpg');
+            /* background-color: black; */
+            height: 150vh;
+            width: 100%;
+            
+        }
+
+        .name {
+            margin-left: 54px;
+            font-size: 22px;
+            color: white;
+        }
+
+        .name input{
+            border: 2px solid white;
+        }
+        
+        .srch{
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Main">
+        <h4>Fill the form to contact us</h4>
+        <form action="backend.php">
+            <!-- <img src="https://unsplash.com/s/photos/office-desk" alt="Sorry img not found"> -->
+            <!-- <img src="image.jpg.jpg" alt="Sorry img not found" width="400" height="600"> -->
+            <div class="name">
+                Name: <input class="srch" type="text" name="myname">
+            </div>
+            <br>
+            <!-- <div>
+            Roll: <input type="text" name="myroll">
+        </div> -->
+            <!-- <br> -->
+            <!-- <div>
+            Class: <input type="text" name="myclass">
+        </div>
+        <br> -->
+            <div class="name">
+                Email: <input class="srch" type="email" name="myEmail">
+            </div>
+            <br>
+            <div class="name">
+                I am not a robot: <input type="checkbox" name="myage">
+            </div>
+            <br>
+            <div class="name">
+                Date: <input class="srch" type="date" name="mydate">
+            </div>
+            <br>
+            <div class="name">
+                Enter your age: <input class="srch" type="number" name="myNumber">
+            </div>
+            <br>
+            <div class="name">
+                Gender: Male <input type="checkbox" name="mydate"> Female <input type="checkbox" name="mydate">
+                Other:<input type="checkbox" name="myOther">
+            </div>
+            <br>
+            <div class="name">
+                Write about your self:<br> <textarea class="srch" name="myTest" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div class="name">
+                <input class="srch" type="submit" value="submit now"> <input class="srch" type="reset" value="reset Now">
+            </div>
+            <br>
+            <div class="name">
+                MyUrl:<input class="srch" type="url" name="myUrl">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
